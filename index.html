@@ -4,13 +4,75 @@
 <meta name="theme-color" content="#1769d2"><meta name="description" content="DINARA elektrik faturası ödeme bağlantısı">
 <title>DINARA</title><link rel="manifest" href="manifest.webmanifest">
 <style>
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#1769d2}
-body{min-height:100vh;min-height:100dvh;color:white;font-family:Arial,sans-serif}
-main{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 24px}
-.row{display:flex;align-items:center;gap:12px}.number{font-size:clamp(27px,7vw,34px);font-weight:800;letter-spacing:1px}
-.copy{width:52px;height:52px;border:0;border-radius:10px;background:white;color:#1769d2;font-size:26px;font-weight:bold}
-h1{margin:30px 0 72px;text-align:center;font-size:clamp(32px,8vw,42px)}
-.pay{width:min(100%,440px);min-height:76px;border:0;border-radius:8px;background:white;color:#1769d2;font-size:22px;font-weight:800}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: #1769d2;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 24px 16vh;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.number {
+  font-size: clamp(42px, 14vw, 64px);
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.copy {
+  width: 90px;
+  height: 90px;
+  border: 0;
+  border-radius: 16px;
+  background: white;
+  color: #1769d2;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 36px 0 110px;
+  text-align: center;
+  font-size: clamp(44px, 15vw, 70px);
+}
+
+.pay {
+  width: 100%;
+  max-width: 760px;
+  min-height: 130px;
+  border: 0;
+  border-radius: 12px;
+  background: white;
+  color: #1769d2;
+  font-size: 36px;
+  font-weight: 800;
+}
+
 </style></head><body><main>
 <div class="row"><div class="number">00289678</div><button class="copy" id="copy" aria-label="Abone numarasını kopyala">▢</button></div>
 <h1>⚡ DINARA ⚡</h1><button class="pay" id="pay">FATURA ÖDE</button>
